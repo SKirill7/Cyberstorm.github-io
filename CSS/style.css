@@ -58,7 +58,6 @@ body {
     width: 45px;
     margin-left: 20px;
 }
-
 .menu-link {
     margin: 0 0 0 50px;
 }
@@ -101,7 +100,6 @@ body {
     margin: 0 auto;
     width: 1440px;
   }
-  
   .tournaments__header {
     width: 103px;
     height: 23px;
@@ -130,24 +128,20 @@ body {
     margin-bottom: 20px;
     position: relative;
   }
-
   .tournaments .tournament__description {
     position: absolute;
     bottom: 20px;
-    /* display: inline-block; */
     font-size: 12px;
     font-weight: 700;
     padding: 0 10px;
   }
   .tournaments .tournament__header {
-    /* display: inline-block; */
     display: block;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
   }
   .tournaments .tournament__commentlike {
     padding-top: 5px;
-    /* display: inline-block; */
     display: block;
   }
   .streams_content {
@@ -164,7 +158,6 @@ body {
     margin-bottom: 20px;
     position: relative;
   }
-
   .streams .stream__description {
     position: absolute;
     bottom: 20px;
@@ -175,7 +168,6 @@ body {
     padding: 0 10px;
   }
   .streams .stream__header {
-    /* display: inline-block; */
     display: block;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
@@ -183,7 +175,7 @@ body {
   .streams .stream__commentlike {
     display: block;
     padding-top: 5px;
-    /* display: inline-block; */
+    
   }
   .slider {
       display: flex;
@@ -235,8 +227,7 @@ footer {
 .footer-title {
     border-top: 1px solid white;
     padding: 20px 0;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
 @media screen and (max-width: 1460px) {
     .container {
@@ -313,7 +304,6 @@ footer {
     .main_name{
       margin: 0;
     }
-
   }
   @media screen and (max-width: 740px) {
     .container {
@@ -344,7 +334,6 @@ footer {
      .rules {
       font-size: 15px;
     }
-    
   }
   @media screen and (max-width: 500px) {
     .container {
