@@ -7,12 +7,16 @@
     color: white;
 }
 body {
-    background: url('../img/background-elements2.png') 0px 1000px/cover no-repeat, url('../img/background-elements.png') top repeat-x, url('../img/background-main.png') 0 0/cover repeat;
-}
+    background: url('../img/background-elements2.png') 0px 1000px/cover no-repeat, 
+    url('../img/\(1\).png')right top no-repeat ,
+    url("../img/background-elements.png")left top no-repeat , 
+    url('../img/background-main2.png') 0 0/cover repeat;
+} 
 .container {
     width: 1400px;
     margin: 0 auto;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,7 @@ body {
 }
 .login_button {
     padding-left: 30px;
+    font-size: 18px;
 }
 .menu {
     margin: 0 81px 0 0;
@@ -80,6 +85,9 @@ body {
     outline: none;
     text-align: center;
 }
+.wrapper {
+  display: none;
+}
 .container {
     width: 1400px;
     margin: 0 auto;
@@ -94,7 +102,9 @@ body {
 .main_name {
     font-size: 30px;
     font-weight: bold;
-    margin: 0 0 0 50px;
+    color: rgb(84, 41, 107);
+    text-shadow: rgb(86, 23, 115) 10px 5px 10px;
+    font-style: italic;
 }
 .container {
     margin: 0 auto;
@@ -152,7 +162,7 @@ body {
       margin: 106px 0 0 0;
   }
   .streams_label {
-      margin: 117px 0 0 40px;
+      margin: 117px 0 0 50px;
   }
   .streams .stream {
     margin-bottom: 20px;
@@ -183,13 +193,13 @@ body {
       align-items: center;
       margin: 69px 0;
   }
-  .dot {
+  /* .dot {
       width: 12px;
       height: 12px;
       background-color: white;
       border-radius: 50px;
       margin: 0 15px;
-  }
+  } */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -234,6 +244,9 @@ footer {
       width: 1280px;
       margin: 0 auto;
     }
+    .tournaments__header {
+      margin-left: 120px;
+    }
   }
   @media screen and (max-width: 1300px) {
     .container {
@@ -242,6 +255,16 @@ footer {
     }
     .main_title-logo {
         margin: 50px 0 200px 30px;
+    }
+    .name {
+      display: none;
+    }
+    .small {
+      width: 400px;
+      height: 300px;
+    }
+    .streams_label {
+      margin-left: 100px;
     }
   }
   @media screen and (max-width: 1040px) {
@@ -252,15 +275,9 @@ footer {
     .main_title-logo img {
         width: 600px;
     }
-    .menu {
-        display: none;
-    }
-    .searchbar{
-      display: none;
-    }
     .iconmenu {
         display: block;
-        margin-right: 50px;
+        margin-right: 100px;
     }
     .header-link {
       display: none;
@@ -273,6 +290,7 @@ footer {
     }
     .small{
       width: 328px;
+      height: 250px;
     }
     .main_title-logo{
       display: flex;
@@ -304,6 +322,10 @@ footer {
     .main_name{
       margin: 0;
     }
+    .header-right {
+      height: 0;
+      margin-top: 50px;
+    }
   }
   @media screen and (max-width: 740px) {
     .container {
@@ -315,10 +337,15 @@ footer {
     }
     .small{
       width: 300px;
+      height: 200px;
     }
-    .header-left{
+    .menu {
       display: none;
-    }
+  }
+
+  .searchbar {
+    display: none;
+  }
     .header-right{
       width: 100%;
     }
@@ -333,6 +360,17 @@ footer {
     }
      .rules {
       font-size: 15px;
+    }
+    .wrapper {
+      display: block;
+      outline: none;
+      bottom: 30px;
+    }
+    .wrapper a {
+      background-color: rgb(29,3,61);
+      border:1px solid white;
+      border-radius: 50px;
+      
     }
   }
   @media screen and (max-width: 500px) {

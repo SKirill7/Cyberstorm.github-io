@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyberstorm</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style_carusel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -39,11 +40,27 @@
                         <a href="#" class="menu-link">Игры</a>
                         <a href="#" class="menu-link">Магазин</a>
                     </nav>
-                    <div class="iconmenu">
+                    <div class="wrapper">
+                        <input type="checkbox" id="check-menu">
+                        <label for="check-menu"></label>
+                        <div class="burger-line first"></div>
+                         <div class="burger-line second"></div>
+                         <div class="burger-line third"></div>
+                        <div class="burger-line fourth"></div>
+                        <nav class="main-menu">
+                            <a href="#">Вход</a>
+                            <a href="#">Киберспорт</a>
+                            <a href="#">Блог</a>
+                            <a href="#">Игры</a>
+                            <a href="#">Магазин</a>
+                            <a href="#">Поиск</a>
+                        </nav>
+                    </div>
+                    <!-- <div class="iconmenu">
                         <img src="./img/icons/login.svg" alt="loginicon">
                         <img src="./img/icons/hamburger.svg" alt="burger">
                         <img src="./img/icons/loupe.svg" alt="search_icon">
-                    </div>
+                    </div> -->
                     <div class="searchbar">
                         <img src="./img/icons/searchloupe.png" alt="loupe" class="searchicon">
                         <input placeholder="Поиск" type="text">
