@@ -193,13 +193,13 @@ body {
       align-items: center;
       margin: 69px 0;
   }
-  /* .dot {
+  .dot {
       width: 12px;
       height: 12px;
       background-color: white;
       border-radius: 50px;
       margin: 0 15px;
-  } */
+ */
 .footer {
     display: flex;
     justify-content: space-between;
