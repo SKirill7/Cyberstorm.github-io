@@ -48,7 +48,7 @@ body {
   width: 45px;
   margin: 0 0 0 30px;
 }
-.login_button {
+.login_button  {
     padding-left: 30px;
     font-size: 18px;
 }
@@ -118,12 +118,12 @@ body {
     font-weight: 700;
     margin: 0 0 50px 50px;
   }
-  .tournaments__grid {
+.tournaments__grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .tournaments__view-all {
+.tournaments__view-all {
     display: flex;
     width: 143px;
     height: 43px;
@@ -133,42 +133,44 @@ body {
     justify-content: center;
     background: linear-gradient(90deg, #4b267a 0%, #251647 100%);
     margin: 82px auto;
-  }
-  .tournaments .tournament {
+}
+.tournaments .tournament {
     margin-bottom: 20px;
     position: relative;
-  }
-  .tournaments .tournament__description {
+}
+.tournaments .tournament__description {
     position: absolute;
     bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     padding: 0 10px;
-  }
-  .tournaments .tournament__header {
+}
+.tournaments .tournament__header {
     display: block;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
-  }
-  .tournaments .tournament__commentlike {
+    text-align: left;
+    overflow: hidden;
+}
+.tournaments .tournament__commentlike {
     padding-top: 5px;
     display: block;
-  }
-  .streams_content {
+}
+.streams_content {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
       margin: 106px 0 0 0;
-  }
-  .streams_label {
-      margin: 117px 0 0 50px;
-  }
-  .streams .stream {
+}
+.streams_label {
+      margin: 117px 0 150px 50px;
+}
+.streams .stream {
     margin-bottom: 20px;
     position: relative;
-  }
-  .streams .stream__description {
+}
+.streams .stream__description {
     position: absolute;
     bottom: 20px;
     left: 0px;
@@ -176,30 +178,31 @@ body {
     font-size: 12px;
     font-weight: 700;
     padding: 0 10px;
-  }
-  .streams .stream__header {
+}
+.streams .stream__header {
     display: block;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
-  }
-  .streams .stream__commentlike {
-    display: block;
+}
+.streams .stream__commentlike {
+    display: inline-block;
     padding-top: 5px;
     
-  }
-  .slider {
+}
+.slider {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 69px 0;
-  }
-  /* .dot {
+}
+.dot {
       width: 12px;
       height: 12px;
       background-color: white;
       border-radius: 50px;
       margin: 0 15px;
-  } */
+  }
+  
 .footer {
     display: flex;
     justify-content: space-between;
@@ -229,7 +232,8 @@ body {
     flex-direction: column;
 }
 .rules { 
-    margin-top: 90px;
+    margin-top: 99.5px;
+    font-size: 16px;
 }
 footer {
     background-color: rgba(92, 68, 116, 0.7);
@@ -240,140 +244,150 @@ footer {
     font-weight: 700;   
 }
 @media screen and (max-width: 1460px) {
-    .container {
-      width: 1280px;
-      margin: 0 auto;
+  .container {
+    width: 1280px;
+    margin: 0 auto;
     }
-    .tournaments__header {
-      margin-left: 120px;
-    }
-  }
-  @media screen and (max-width: 1300px) {
-    .container {
-      width: 1024px;
-      margin: 0 auto;
-    }
-    .main_title-logo {
-        margin: 50px 0 200px 30px;
-    }
-    .name {
-      display: none;
-    }
-    .small {
-      width: 400px;
-      height: 300px;
-    }
-    .streams_label {
-      margin-left: 100px;
+  .tournaments__header {
+    margin-left: 120px;
     }
   }
-  @media screen and (max-width: 1040px) {
-    .container {
-      width: 720px;
-      margin: 0 auto;
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
     }
-    .main_title-logo img {
-        width: 600px;
+  .main_title-logo {
+    margin: 50px 0 200px 30px;
     }
-    .iconmenu {
-        display: block;
-        margin-right: 100px;
+  .name {
+    display: none;
     }
-    .header-link {
-      display: none;
+  .small {
+    width: 400px;
+    height: 300px;
     }
-    .login_button {
-      display: none;
+  .streams_label {
+    margin-left: 100px;
     }
-    .login_icon img {
-      display: block;
+  .stream {
+    padding: 0 15px;
     }
-    .small{
-      width: 328px;
-      height: 250px;
-    }
-    .main_title-logo{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin: 40px auto;
-      width: 100%;
-    }
-    .tournaments__header {
-      margin: 50px auto;
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-    .tournaments__view-all {
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
-    .streams_label {
-      margin: 0;
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-    .streams_content {
-      margin: 50px auto;
-    }
-    .main_name{
-      margin: 0;
-    }
-    .header-right {
-      height: 0;
-      margin-top: 50px;
+  .stream__description {
+    margin-left: 10px;
     }
   }
-  @media screen and (max-width: 740px) {
-    .container {
-      width: 480px;
-      margin: 0 auto;
+@media screen and (max-width: 1040px) {
+  .container {
+    width: 720px;
+    margin: 0 auto;
     }
-    .main_title-logo img {
-        width: 440px;
+  .main_title-logo img {
+    width: 600px;
     }
-    .small{
-      width: 300px;
-      height: 200px;
+  .iconmenu {
+    display: block;
+    margin-right: 100px;
     }
-    .menu {
-      display: none;
+  .header-link {
+    display: none;
+    }
+  .login_button {
+    display: none;
+    }
+  .login_icon img {
+    display: block;
+    }
+  .small{
+    width: 328px;
+    height: 250px;
+    }
+  .main_title-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 100%;
+    }
+  .tournaments__header {
+    margin: 50px auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    }
+  .tournaments__view-all {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    }
+  .streams_label {
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    }
+  .streams_content {
+    margin: 50px auto;
+    }
+  .main_name{
+    margin: 0;
+    }
+  .header-right {
+    height: 0;
+    margin-top: 50px;
+    }
+  .rules {
+    margin-top: 96.5px;
+    font-size: 16px;
   }
-
+@media screen and (max-width: 740px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    }
+  .main_title-logo img {
+    width: 440px;
+    }
+  .small{
+    width: 300px;
+    height: 200px;
+    }
+  .menu {
+    display: none;
+  }
+  .streams_label {
+    margin: 0 0 100px 0;
+  }
   .searchbar {
     display: none;
   }
-    .header-right{
-      width: 100%;
-    }
-    .iconmenu {
-      width: 100%;
-      margin: 0;
-      display: flex;
-      justify-content: space-around;
-    }
-    .iconmenu img {
-      width: 45px;
-    }
-     .rules {
-      font-size: 15px;
-    }
-    .wrapper {
-      display: block;
-      outline: none;
-      bottom: 30px;
-    }
-    .wrapper a {
-      background-color: rgb(29,3,61);
-      border:1px solid white;
-      border-radius: 50px;
-      
-    }
+  .header-right {
+    width: 100%;
   }
-  @media screen and (max-width: 500px) {
+  .iconmenu {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    }
+  .iconmenu img {
+    width: 45px;
+    }
+  .rules {
+    font-size: 15px;
+    }
+  .wrapper {
+    display: block;
+    outline: none;
+    bottom: 30px;
+    }
+  .wrapper a {
+    background-color: rgb(29,3,61);
+    border:1px solid white;
+    border-radius: 50px;
+    }   
+}
+@media screen and (max-width: 500px) {
     .container {
       width: 320px;
       margin: 0 auto;
@@ -389,5 +403,5 @@ footer {
     }
         .rules {
       font-size: 12px;
-    }
+    } 
   }
